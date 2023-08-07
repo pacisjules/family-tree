@@ -1,6 +1,6 @@
 // components/ContentSlider.js
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 const ContentSlider = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -15,7 +15,7 @@ const ContentSlider = ({ slides }) => {
   return (
     <div className="content-slider">
       <div className="slide">
-        <img src={slides[currentSlide].image} alt={`Slide ${currentSlide + 1}`} />
+        <Image src={slides[currentSlide].image} alt={`Slide ${currentSlide + 1}`} />
         <h2>{slides[currentSlide].title}</h2>
         <p>{slides[currentSlide].description}</p>
       </div>
@@ -42,7 +42,7 @@ const ContentSlider = ({ slides }) => {
           text-align: center;
         }
 
-        .slide img {
+        .slide Image {
           width: 600px;
           height: 200px;
           object-fit:cover;
