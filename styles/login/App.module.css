@@ -1,0 +1,61 @@
+.logincontainer{
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #eeffde;
+    color: white;
+    font-family: "Inter";
+    font-size: 11pt;
+}
+
+
+
+.logincontainer .loginform{
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.19));
+  color: black;
+  padding: 20px;
+}
+
+
+.logincontainer .loginform .buttons{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.logincontainer h1{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 22pt;
+  font-weight: 600;
+}
+
+.logincontainer input{
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+
+.logincontainer label{
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.logincontainer a{
+  color: rgb(0, 47, 29);
+  font-weight: 500;
+  transition: ease-out 0.2s;
+}
+
+.logincontainer a:hover{
+  color: rgb(0, 113, 34);
+  font-weight: 500;
+}

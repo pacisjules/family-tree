@@ -1,0 +1,83 @@
+.topbar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-family: "Inter";
+    font-size: 11pt;
+}
+
+
+@media (max-width: 768px) {
+    /* Styles for screens up to 768px wide (e.g., tablets and mobile devices) */
+    .topbar {
+      flex-direction: column;
+      height: auto;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for screens up to 480px wide (e.g., small mobile devices) */
+    .topbar {
+      padding: 10px;
+      font-size: 10pt;
+    }
+  }
+
+
+
+
+.topbar .left a{
+ display: flex;
+ justify-content: space-around;
+ width: 160px;
+ align-items: center;
+ transition: ease-out 0.2s;
+}
+
+
+.topbar .left a:hover{
+    color: rgb(116, 193, 0);
+}
+
+
+.topbar .middle{
+   display: block;
+}
+
+
+
+.topbar .right{
+    
+}
+
+
+.topbar ul{
+    padding: 10px;
+    display: block;
+}
+
+.topbar ul li{
+    display: inline-block;
+}
+
+
+.topbar ul li a{
+    margin-left: 10px;
+    padding: 5px;
+    color: #b7b7b7;
+    font-weight: 500;
+    transition: ease-out 0.2s;
+}
+
+.topbar ul li a:hover{
+    color: rgb(116, 193, 0);
+}
