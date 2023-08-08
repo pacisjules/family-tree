@@ -8,7 +8,7 @@ import { FaAppleAlt } from "react-icons/fa";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import style from "@/styles/login/App.module.css";
+import style from "../styles/login/App.module.css";
 import axios from "axios";
 
 const Activateaccount = () => {

@@ -3,7 +3,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import styles from "@/styles/home/App.module.css";
+import styles from "../styles/home/App.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
 function Home(){

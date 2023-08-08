@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from "@/styles/forms/App.module.css"
+import styles from "../../styles/forms/App.module.css"
 import Link from 'next/link';
 
 import { useSelector, useDispatch } from "react-redux";

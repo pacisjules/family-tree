@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "@/styles/topsidebar/App.module.css";
+import style from "../../styles/topsidebar/App.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
