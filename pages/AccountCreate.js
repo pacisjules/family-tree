@@ -67,6 +67,8 @@ const AccountCreate = () => {
         const configs = {
           headers: {
             "Content-Type": "application/json",
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept',
           },
         };
 
