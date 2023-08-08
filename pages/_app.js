@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { store } from "../store/store";
 import { Provider } from "react-redux";
 import { SessionProvider } from "next-auth/react";
