@@ -25,17 +25,17 @@ function TopSideBar() {
 
         <div className={style.middle}>
           <ul>
-            <li>
+            {/* <li>
               <Link href={"/Information"}>Trees</Link>
-            </li>
-            <li>
+            </li> */}
+           {/*  <li>
               <Link href={"#"}>Search</Link>
+            </li> */}
+            <li>
+              <Link href={"Home"}>About</Link>
             </li>
             <li>
-              <Link href={"Home"}>Explore</Link>
-            </li>
-            <li>
-              <Link href={"#"}>Help Status</Link>
+              <Link href={"#"}>Help/FAQs</Link>
             </li>
           </ul>
         </div>
@@ -98,17 +98,11 @@ function TopSideBar() {
   
         <div className={style.middle}>
           <ul>
-            <li>
-              <Link href={"/Information"}>Trees</Link>
+          <li>
+              <Link href={"Home"}>About</Link>
             </li>
             <li>
-              <Link href={"#"}>Search</Link>
-            </li>
-            <li>
-              <Link href={"Home"}>Explore</Link>
-            </li>
-            <li>
-              <Link href={"#"}>Help Status</Link>
+              <Link href={"#"}>Help/FAQs</Link>
             </li>
           </ul>
         </div>
