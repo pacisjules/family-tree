@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import style from "../styles/login/App.module.css";
 import axios from "axios";
+import config from  '@/utils/config'; 
 
 const Activateaccount = () => {
   const router = useRouter();
@@ -72,13 +73,15 @@ const Activateaccount = () => {
         const config = {
           headers: {
             "Content-Type": "application/json",
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept',
           },
         };
 
 
         await axios
           .post(
-            "http://127.0.0.1:8000/auth/activeaccount",
+            config.API_BASE_URLS+"auth/activeaccount",
             data,
             config
           )
