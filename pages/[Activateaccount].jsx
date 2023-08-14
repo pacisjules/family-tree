@@ -81,7 +81,7 @@ const Activateaccount = () => {
 
         await axios
           .post(
-            config.API_BASE_URLS+"auth/activeaccount",
+            "http://3.12.147.221:8000/auth/activeaccount",
             data,
             config
           )
