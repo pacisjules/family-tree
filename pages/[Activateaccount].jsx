@@ -70,7 +70,7 @@ const Activateaccount = () => {
           n_pass: password1,
         };
 
-        const config = {
+        const configs = {
           headers: {
             "Content-Type": "application/json",
             'Access-Control-Allow-Origin': '*',
@@ -81,9 +81,9 @@ const Activateaccount = () => {
 
         await axios
           .post(
-            "http://3.12.147.221:8000/auth/activeaccount",
+            config.API_BASE_URLS+"auth/activeaccount",
             data,
-            config
+            configs
           )
           .then((response) => {
             router.push("/Login");

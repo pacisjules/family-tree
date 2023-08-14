@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { AiFillCloseCircle } from 'react-icons/ai'
 import axios from "axios";
 import Image from 'next/image';
+import config from  '@/utils/config'; 
 
 const AddMother = () => {
     const dispatch = useDispatch();
@@ -78,7 +79,7 @@ const AddMother = () => {
         };
 
 
-        const config = {
+        const configs = {
             headers: {
                 "Content-Type": "application/json",
                 'Access-Control-Allow-Origin': '*',
@@ -91,9 +92,9 @@ const AddMother = () => {
 
         await axios
             .post(
-                "http://127.0.0.1:8000/person/register",
+                config.API_BASE_URLS+"person/register",
                 data,
-                config
+                configs
             )
             .then((response) => {
                 router.push("/Completed");
