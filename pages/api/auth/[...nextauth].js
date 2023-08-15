@@ -11,7 +11,7 @@ export const authOptions = {
 
       async authorize(credentials, req) {
         
-        const baseUrl = process.env.BACKEND_URL;
+        const baseUrl = 'https://family-tree-q0kw.onrender.com/';
         
         var bodyFormData = new FormData();
         bodyFormData.append("username", credentials.username);
