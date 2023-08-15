@@ -19,7 +19,7 @@ export const authOptions = {
 
         var logindata = bodyFormData;
         
-        const response = await fetch(baseUrl + "/auth/login", {
+        const response = await fetch(baseUrl + "auth/login", {
           method: "POST",
           body: logindata,
         });
