@@ -6,12 +6,10 @@ export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
-
       credentials: {},
 
       async authorize(credentials, req) {
         
-        const baseUrl = 'https://family-tree-q0kw.onrender.com/';
         
         var bodyFormData = new FormData();
         bodyFormData.append("username", credentials.username);
@@ -19,7 +17,7 @@ export const authOptions = {
 
         var logindata = bodyFormData;
         
-        const response = await fetch(baseUrl + "auth/login", {
+        const response = await fetch("https://family-tree-q0kw.onrender.com/auth/login", {
           method: "POST",
           body: logindata,
         });
