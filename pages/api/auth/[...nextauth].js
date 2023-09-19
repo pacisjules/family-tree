@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
+
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -43,15 +44,9 @@ export const authOptions = {
       session.user = token.user;
       return session;
     },
-
-    // async signOut({ baseUrl }) {
-    //   return `${baseUrl}/`;
-    // },
-
   },
-
   secret: process.env.NEXTAUTH_SECRET,
-  debug: false,
+  debug: true,
 
   pages: {
     signIn: "/", //Need to define custom login page (if using)
