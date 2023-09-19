@@ -9,8 +9,6 @@ export const authOptions = {
       credentials: {},
 
       async authorize(credentials, req) {
-        
-        
         var bodyFormData = new FormData();
         bodyFormData.append("username", credentials.username);
         bodyFormData.append("password", credentials.password);
