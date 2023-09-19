@@ -1,7 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-
 export const authOptions = {
   providers: [
     CredentialsProvider({
@@ -9,6 +8,8 @@ export const authOptions = {
       credentials: {},
 
       async authorize(credentials, req) {
+        
+        
         var bodyFormData = new FormData();
         bodyFormData.append("username", credentials.username);
         bodyFormData.append("password", credentials.password);
@@ -42,6 +43,11 @@ export const authOptions = {
       session.user = token.user;
       return session;
     },
+
+    // async signOut({ baseUrl }) {
+    //   return `${baseUrl}/`;
+    // },
+
   },
 
   secret: process.env.NEXTAUTH_SECRET,
