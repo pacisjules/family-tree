@@ -51,7 +51,7 @@ export const authOptions = {
   },
 
   secret: process.env.NEXTAUTH_SECRET,
-  debug: true,
+  debug: false,
 
   pages: {
     signIn: "/", //Need to define custom login page (if using)
