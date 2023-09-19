@@ -45,7 +45,6 @@ const AddBornPlace = () => {
         setShowBtn(true)
     }
 
-
     const handlesetplace = () => {
         if (inputValue === "") {
             setMsg('Please select your birth place');

@@ -43,6 +43,7 @@ function Success() {
         responseInfos.data.first_name + " " + responseInfos.data.last_name
       )
     );
+    
     dispatch(
       setCompleteinfo(
         responseInfos.data.first_name + " " + responseInfos.data.last_name
