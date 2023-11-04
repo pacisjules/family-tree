@@ -1,0 +1,105 @@
+.logincontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #ebebeb;
+    color: white;
+    font-family: "Inter";
+    font-size: 11pt;
+    flex-direction: column;
+}
+
+
+.logincontainer .up{
+  width: 100%;
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logincontainer .up h1{
+  color: green;
+  font-size: 15pt;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.logincontainer .up p{
+  margin-top: 15px;
+  color: #252525;
+  text-align: center;
+}
+
+
+.logincontainer .middle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  height: 200px;
+}
+
+.logincontainer .middle .button{
+  background-color: green;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.logincontainer .middle .button:hover{
+  background-color: #006600;
+}
+
+.logincontainer .down{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.logincontainer .down .left{
+  width: 30%;
+  padding: 15px;
+}
+
+.logincontainer .down .right{
+  width: 30%;
+  padding: 15px;
+}
+
+.logincontainer .down h1{
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+.logincontainer .down p{
+  font-size: 10pt;
+  font-weight: 400;
+}
+
+.logincontainer .down .downup{
+  background-color: #1B88B0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.logincontainer .down .downhasi{
+  background-color: #534D46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}

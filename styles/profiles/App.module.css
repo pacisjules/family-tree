@@ -1,0 +1,256 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+
+.container .upside {
+  width: 100%;
+  background-color: #595959;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .upside .inside {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.container .upside .inside .infosQuickEdit{
+  margin-left: 120px;
+  color: white;
+  background-color: #868686;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.container .upside .inside .infosQuickEdit:hover{
+  background-color: #9b9b9b;
+}
+
+
+.container .upside .inside .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.container .upside .inside .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.container .upside .inside .infos {
+  margin-left: 20px;
+  color: white;
+}
+
+.container .upside .inside .infos h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28pt;
+}
+
+.container .upside .inside .infos p {
+  font-size: 12pt;
+}
+
+.container .menu {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px gainsboro solid;
+}
+
+
+.container .menu .inside {
+  height: 30px;
+  width: 30%;
+}
+
+.container .menu .inside ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.container .menu .inside ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.container .menu .inside ul li a {
+  margin-left: 20px;
+  transition: 0.1s ease-in-out;
+  font-weight: bold;
+}
+
+.container .menu .inside ul li a:hover {
+  border-bottom: 2px green solid;
+}
+
+.EditModal {
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EditModal .box {
+  width: 55%;
+  height: auto;
+  background-color: #F7F3F0;
+  border-radius: 5px;
+  border: 1px gainsboro solid;
+  box-shadow: 1px -1px 20px 2px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 1px -1px 20px 2px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 1px -1px 20px 2px rgba(0, 0, 0, 0.34);
+}
+
+.EditModal .box .boxTitle{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px gainsboro solid;
+  background-color: white;
+}
+
+.container .downside{
+  width: 100%;
+  height:auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container .downside .lifeStory{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container .downside .Facts{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .downside .Facts .sideFact{
+  width: 35%;
+  height: 300px;
+  margin-left: 10px;
+  
+}
+
+
+.container .downside .Facts .sideSource{
+  width: 35%;
+  height: 300px;
+  margin-left: 10px;
+}
+
+
+.container .downside .Facts .sideFamily{
+  width: 35%;
+  height: 300px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+
+.container .downside .Gallery{
+  width: 100%;
+  height: 100%;
+}
+
+.container .downside .Hints{
+  width: 100%;
+  height: 100%;
+}
+
+.mybtns{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 200px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.mybtns:hover{
+  opacity: 0.8;
+}
+
+
+.popMenu{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popMenu:before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 65px;
+  border: 15px solid transparent;
+  border-bottom-color: black;
+  margin-top: -42px;
+}
+
+
+.popMenu ul{
+  
+  font-weight: 300;
+}
+
+.popMenu ul li{
+  font-size: 13px;
+ 
+  padding: 3px;
+  cursor: pointer;
+}
+
+.popMenu ul li:hover{
+  background-color: #2a2a2a;
+  border-bottom: 1px solid rgb(51, 51, 51);
+}

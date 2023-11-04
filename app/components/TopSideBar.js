@@ -10,14 +10,14 @@ import { BiBell, BiChat, BiChevronDown } from "react-icons/bi"
 function TopSideBar() {
   const dispatch = useDispatch();
   const router = useRouter();
-  const { sign_status, userNames, username } = useSelector((state) => state.user_infosred);
+  const { sign_status, userNames, username, first_name, last_name } = useSelector((state) => state.user_infosred);
 
 
   if(sign_status==1){
     return (
       <div className={style.topbar}>
         <div className={style.left}>
-          <Link href={"/"}>
+          <Link href={"/Home"}>
             <Image src="/logo.svg" alt="My Image" width={30} height={30} />{" "}
             Iyali{" "}
           </Link>
@@ -69,7 +69,7 @@ function TopSideBar() {
 
 
             <li>
-                <Link href={"/Profile"}>{userNames===''?username:userNames}</Link>
+                <Link href={"/Profile"}>{first_name} {last_name}</Link>
             </li>
             <li>
               <button
@@ -81,6 +81,8 @@ function TopSideBar() {
               >
                 Sign Out
               </button>
+
+
               
             </li>
           </ul>
@@ -98,6 +100,9 @@ function TopSideBar() {
   
         <div className={style.middle}>
           <ul>
+          {/* <li>
+              <Link href={"/Information"}>Trees</Link>
+            </li> */}
           <li>
               <Link href={"Home"}>About</Link>
             </li>

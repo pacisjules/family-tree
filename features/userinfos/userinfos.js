@@ -55,7 +55,7 @@ const initialState = {
   Userinfos:null,
   username:'',
   first_name:'',
-  second_name:'',
+  last_name:'',
   role:'',
   msg:'',
   sign_status:0,
@@ -73,10 +73,9 @@ export const userinfos = createSlice({
         add_infos: (state, action) => {
             state.information=action.payload;
             //console.log(action.payload.company)
-
             state.username=action.payload.username,
             state.first_name=action.payload.first_name,
-            state.second_name=action.payload.last_name,
+            state.last_name=action.payload.last_name,
             state.role=action.payload.role
           },
 

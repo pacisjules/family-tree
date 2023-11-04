@@ -9,7 +9,7 @@ import NextNProgress from "nextjs-progressbar";
 export default function App({ Component, pageProps, session }) {
   const router = useRouter();
 
-  if (router.pathname === "/questionnaire/Intro" || router.pathname === "/questionnaire/AddNames" || router.pathname === "/questionnaire/AddGender"  || router.pathname === "/questionnaire/AddBorn" || router.pathname === "/questionnaire/AddBornPlace"|| router.pathname === "/questionnaire/parents/AddFather"|| router.pathname === "/questionnaire/parents/AddMother") {
+  if (router.pathname === "/AccountCreate" || router.pathname === "/questionnaire/Intro" || router.pathname === "/questionnaire/AddNames" || router.pathname === "/questionnaire/AddGender"  || router.pathname === "/questionnaire/AddBorn" || router.pathname === "/questionnaire/AddBornPlace"|| router.pathname === "/questionnaire/parents/AddFather"|| router.pathname === "/questionnaire/parents/AddMother") {
     return (
       <SessionProvider session={session}>
         <Provider store={store}>

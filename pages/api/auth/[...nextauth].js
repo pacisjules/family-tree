@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-
+import config from "@/utils/config";
 
 export const authOptions = {
   providers: [
@@ -10,14 +10,13 @@ export const authOptions = {
 
       async authorize(credentials, req) {
         
-        
         var bodyFormData = new FormData();
         bodyFormData.append("username", credentials.username);
         bodyFormData.append("password", credentials.password);
 
         var logindata = bodyFormData;
         
-        const response = await fetch("https://family-tree-q0kw.onrender.com/auth/login", {
+        const response = await fetch(config.API_BASE_URLS+"auth/login", {
           method: "POST",
           body: logindata,
         });
@@ -49,7 +48,7 @@ export const authOptions = {
   debug: true,
 
   pages: {
-    signIn: "/", //Need to define custom login page (if using)
+    signIn: "/Login", //Need to define custom login page (if using)
   },
 }
 

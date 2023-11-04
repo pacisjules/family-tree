@@ -1,0 +1,84 @@
+.logincontainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #ebebeb;
+  color: white;
+  font-family: "Inter";
+  font-size: 11pt;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.logincontainer .up {
+  width: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.logincontainer .up h1 {
+  color: greenyellow;
+  font-size: 22pt;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.logincontainer .up p {
+  margin-top: 15px;
+  text-align: center;
+  width: 55%;
+  color: white;
+}
+
+
+/* .logincontainer .middle{
+  flex: 1 0 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+} */
+
+
+.logincontainer .down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logincontainer .down .left {
+  width: 30%;
+  padding: 15px;
+}
+
+.logincontainer .down .right {
+  width: 30%;
+  padding: 15px;
+}
+
+.logincontainer .down h1 {
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+.logincontainer .down p {
+  font-size: 10pt;
+  font-weight: 400;
+}
+
+.logincontainer .down .downup {
+  background-color: #534D46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

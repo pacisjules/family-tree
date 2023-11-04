@@ -119,16 +119,19 @@ const Login = () => {
         <div className={style.buttons}>
           <button
             onClick={handleLogin}
-            className="bg-green-600 hover:bg-green-800 text-white font-normal py-1.5 px-6 rounded-full transition-all mr-5 w-1/2 flex justify-center items-center"
+            className="bg-green-600 hover:bg-green-800 text-white font-normal py-1.5 px-6 rounded-full transition-all mr-5 w flex justify-center items-center"
           >
             {SignLoad ? (
               <Image src="/load.gif" alt="My Image" width={20} height={20} />
             ) : (
-              <BiSolidLogInCircle className="mr-2" />
+              null
+              // <BiSolidLogInCircle className="mr-2" />
             )}
             {btnMsg}
           </button>
-          <Link href={"#"}>Forgot Password ?</Link>
+          <Link style={{
+            fontSize:14
+          }} href={"#"}>{"Don't know your password?"}</Link>
         </div>
 
         <br />

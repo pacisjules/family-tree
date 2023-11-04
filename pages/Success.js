@@ -30,6 +30,21 @@ function Success() {
       headers: { Authorization: `Bearer ${session.user.token}` },
     });
 
+    
+
+    // localStorage.setItem(
+    //   "user_names",
+    //   JSON.stringify(
+    //     responseInfos.data.first_name + " " + responseInfos.data.last_name
+    //   )
+    // );
+    
+
+
+    //dispatch(addusername(response.data.username))
+    dispatch(add_infos(response.data))
+    dispatch(signInOrOut(1));
+
     let user_id = response.data.user_id;
     const Url2 = config.API_BASE_URLS + `users/me/infos?user_id=${user_id}`;
 
@@ -37,31 +52,17 @@ function Success() {
       headers: { Authorization: `Bearer ${session.user.token}` },
     });
 
-    localStorage.setItem(
-      "user_names",
-      JSON.stringify(
-        responseInfos.data.first_name + " " + responseInfos.data.last_name
-      )
-    );
-    
     dispatch(
       setCompleteinfo(
         responseInfos.data.first_name + " " + responseInfos.data.last_name
       )
     );
 
-    dispatch(addusername(response.data.username))
-
-    dispatch(signInOrOut(1));
-
     localStorage.setItem("userinfos", JSON.stringify(response.data));
     localStorage.setItem("id", response.data.user_id);
     localStorage.setItem("sgn", session.user.token);
     localStorage.setItem("org_id", response.data.organization_ID);
   };
-
-
-
 
 
   const interval = setInterval(() => {
